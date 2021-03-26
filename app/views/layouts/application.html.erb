@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Techpitgram</title>
+    <title>Techpitgram4</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-    <%# ここに追加 %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   </head>
 
   <body>
+
+    <%# ==========ここから追加する========== %>
+    <%= render 'partial/navbar' %>
+    <%# ==========ここまで追加する========== %>
+
     <%= yield %>
   </body>
 </html>
